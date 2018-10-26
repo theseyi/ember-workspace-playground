@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "noEmit": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "baseUrl": ".",
+    "module": "es6",
+    "paths": {
+      "application/tests/*": [
+        "tests/*"
+      ],
+      "application/*": [
+        "app/*",
+        "../addon-a/app/*",
+        "../addon-b/app/*"
+      ],
+      "addon-a": [
+        "../addon-a/addon"
+      ],
+      "addon-a/*": [
+        "../addon-a/addon/*"
+      ],
+      "addon-a/test-support": [
+        "../addon-a/addon-test-support"
+      ],
+      "addon-a/test-support/*": [
+        "../addon-a/addon-test-support/*"
+      ],
+      "addon-b": [
+        "../addon-b/addon"
+      ],
+      "addon-b/*": [
+        "../addon-b/addon/*"
+      ],
+      "addon-b/test-support": [
+        "../addon-b/addon-test-support"
+      ],
+      "addon-b/test-support/*": [
+        "../addon-b/addon-test-support/*"
+      ],
+      "*": [
+        "types/*"
+      ]
+    }
+  },
+  "include": [
+    "app/**/*",
+    "tests/**/*",
+    "types/**/*",
+    "../addon-a/**/*",
+    "../addon-b/**/*"
+  ]
+}

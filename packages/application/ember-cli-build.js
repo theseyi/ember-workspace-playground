@@ -4,7 +4,17 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    babel: {
+      sourceMaps: 'inline',
+      plugins: [
+        ['@babel/plugin-proposal-decorators', { legacy: true }],
+        ['@babel/plugin-proposal-class-properties', { loose: true }]
+      ]
+    },
+
+    'ember-cli-babel': {
+      includePolyfill: true
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

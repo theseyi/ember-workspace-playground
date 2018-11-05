@@ -2,5 +2,17 @@
   "private": true,
   "workspaces": [
     "packages/*"
+  ],
+  "nohoist": [
+    "**/babel-preset-env",
+    "**/babel-preset-env/**",
+    "**/ember-decorators",
+    "**/ember-decorators/**",
+    "**/broccoli-babel-transpiler",
+    "**/broccoli-babel-transpiler/**",
+    "**/@ember-decorators/babel-transforms",
+    "**/@ember-decorators/babel-transforms/**",
+    "**/@ember-cli-babel/",
+    "**/@ember-cli-babel/**"
   ]
 }
